@@ -15,7 +15,18 @@
       <a href="ia-appliquee.html">Innovation en IA appliquée</a>
       <a href="contact.html">Contact</a>
     </div>
-    <a class="lang-switch" href="index-en.html">EN</a>
+    <div class="nav-actions">
+      <a class="lang-switch" href="index-en.html"><span class="flag" aria-hidden="true">🇬🇧</span>EN</a>
+      <button class="theme-toggle" type="button" aria-label="Basculer en mode clair">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"></path>
+        </svg>
+      </button>
+    </div>
   </nav>
   <header class="hero">
     <div class="hero__content">
@@ -97,5 +108,6 @@
   <footer class="footer">
     <p>© 2026 Nicolas M. Dibot, Ph.D. Dernière mise à jour : janvier 2026.</p>
   </footer>
+  <script src="theme.js" defer></script>
 </body>
 </html>
