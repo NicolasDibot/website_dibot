@@ -57,6 +57,19 @@ a { color: inherit; text-decoration: none; }
   text-decoration-thickness: 2px;
   background: transparent;
 }
+.lang-switch {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.lang-switch:hover {
+  background: var(--card);
+}
 .page-hero {
   padding: 48px min(9vw, 120px) 24px;
 }
@@ -519,6 +532,7 @@ a { color: inherit; text-decoration: none; }
     padding: 18px min(6vw, 80px);
   }
   .nav-links { gap: 14px; }
+  .lang-switch { align-self: flex-end; margin-top: 8px; }
   .section__title {
     flex-direction: column;
     align-items: flex-start;
