@@ -3,11 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nicolas M. Dibot, Ph.D — Neurosciences computationnelles</title>
+  <meta name="description" content="Nicolas M. Dibot, Ph.D — chercheur en IA et neurosciences computationnelles. Conseil indépendant en IA sur données complexes, audit, prototypage et formation.">
+  <link rel="canonical" href="https://nicolasdibot.github.io/website_dibot/">
+  <link rel="alternate" hreflang="fr" href="https://nicolasdibot.github.io/website_dibot/">
+  <link rel="alternate" hreflang="en" href="https://nicolasdibot.github.io/website_dibot/index-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://nicolasdibot.github.io/website_dibot/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nicolas M. Dibot, Ph.D — IA, recherche et innovation">
+  <meta property="og:description" content="Recherche académique et accompagnement indépendant en IA sur données complexes.">
+  <meta property="og:url" content="https://nicolasdibot.github.io/website_dibot/">
+  <meta property="og:image" content="https://nicolasdibot.github.io/website_dibot/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nicolas M. Dibot, Ph.D — IA, recherche et innovation">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Nicolas M. Dibot, Ph.D — IA, recherche et innovation</title>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nicolas M. Dibot",
+      "honorificSuffix": "Ph.D",
+      "jobTitle": "Chercheur en IA et neurosciences computationnelles",
+      "url": "https://nicolasdibot.github.io/website_dibot/",
+      "email": "mailto:nicolas.dibot@ens.psl.eu",
+      "telephone": "+33695213561",
+      "affiliation": [
+        {"@type": "Organization", "name": "École Normale Supérieure"},
+        {"@type": "Organization", "name": "Institut Mondor de Recherche Biomédicale"}
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/nicolas-dibot-203385178/",
+        "https://scholar.google.com/citations?user=YAc4fGUAAAAJ&hl=fr",
+        "https://www.researchgate.net/profile/Nicolas-Dibot-2"
+      ]
+    }
+  </script>
 </head>
 <body>
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Navigation principale">
     <a class="site-brand" href="index.html">Nicolas M. Dibot, Ph.D</a>
     <div class="nav-links">
       <a class="active" href="index.html">Accueil</a>
@@ -15,7 +50,7 @@
       <a href="ia-appliquee.html">Innovation en IA appliquée</a>
     </div>
     <div class="nav-actions">
-      <a class="lang-switch" href="index-en.html"><span class="flag" aria-hidden="true">🇬🇧</span>EN</a>
+      <a class="lang-switch" href="index-en.html" lang="en"><span class="flag" aria-hidden="true">🇬🇧</span>EN</a>
       <button class="theme-toggle" type="button" aria-label="Basculer en mode clair">
         <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="4"></circle>
@@ -27,85 +62,138 @@
       </button>
     </div>
   </nav>
-  <header class="hero">
+
+  <header class="hero hero--home">
     <div class="hero__content">
+      <p class="eyebrow">Recherche académique · Conseil indépendant</p>
       <div class="hero__identity">
-        <img class="profile-pic" src="photo_profil.png" alt="Photo de Nicolas M. Dibot">
+        <img class="profile-pic" src="photo_profil.png" alt="Portrait de Nicolas M. Dibot">
         <div class="hero__titles">
           <h1>Nicolas M. Dibot, Ph.D</h1>
           <p class="hero__tagline">Chercheur en IA et neurosciences computationnelles</p>
         </div>
       </div>
-      <p class="hero__coords">
+      <p class="hero__value">J’aide les équipes de santé, healthtechs et acteurs R&amp;D à cadrer, tester et valider leurs projets d’IA sur données complexes.</p>
+      <div class="hero__actions">
+        <a class="btn primary" href="ia-appliquee.html">Découvrir mes offres</a>
+        <a class="btn ghost" href="recherche.html">Voir mes travaux</a>
+      </div>
+      <p class="hero__note">Audit de faisabilité · Validation de modèles · Prototypes interprétables · Formation</p>
+      <div class="hero__coords" aria-label="Coordonnées et profils">
         <a class="text-link" href="mailto:nicolas.dibot@ens.psl.eu">nicolas.dibot@ens.psl.eu</a>
-        <span>·</span>
+        <span aria-hidden="true">·</span>
         <a class="text-link" href="tel:+33695213561">+33 (0) 6 95 21 35 61</a>
-        <span>·</span>
+        <span aria-hidden="true">·</span>
         <a class="link-pill" href="https://www.linkedin.com/in/nicolas-dibot-203385178/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <span>·</span>
+        <span aria-hidden="true">·</span>
         <span class="coord-group">
-          <a class="link-pill" href="https://scholar.google.com/citations?user=YAc4fGUAAAAJ&hl=fr" target="_blank" rel="noreferrer">Google Scholar</a>
-          <span>·</span>
+          <a class="link-pill" href="https://scholar.google.com/citations?user=YAc4fGUAAAAJ&amp;hl=fr" target="_blank" rel="noreferrer">Google Scholar</a>
           <a class="link-pill" href="https://www.researchgate.net/profile/Nicolas-Dibot-2" target="_blank" rel="noreferrer">ResearchGate</a>
         </span>
-      </p>
+      </div>
     </div>
-    <div class="hero__aside">
+
+    <aside class="hero__aside" aria-label="Affiliations académiques">
       <div class="card affiliations">
         <ul class="affiliation-list">
           <li>
             <a href="https://www.ens.psl.eu/departement/departement-d-etudes-cognitives" target="_blank" rel="noreferrer">
               <img class="meta-logo" src="logo_ens.png" alt="ENS Ulm">
             </a>
-            <span>École Normale Supérieure (ENS Ulm) — 29 rue d'Ulm, Paris</span>
+            <span>École Normale Supérieure (ENS Ulm) — Département d’études cognitives, Paris</span>
           </li>
           <li>
             <span class="logo-crop"><img src="logo-Inserm.jpg" alt="INSERM"></span>
-            <span>Institut Mondor de Recherche Biomédicale (INSERM), 94000</span>
+            <span>Institut Mondor de Recherche Biomédicale (INSERM), Créteil</span>
           </li>
         </ul>
       </div>
-    </div>
+      <div class="trust-card">
+        <span class="trust-card__label">Expertise</span>
+        <strong>Données biomédicales complexes</strong>
+        <p>Imagerie, données tabulaires, cohortes longitudinales et modèles explicables.</p>
+      </div>
+    </aside>
   </header>
 
   <main>
-    <section class="section cta-section">
-      <div class="cta-grid">
-        <div class="cta-block">
-          <a class="btn cta" href="recherche.html">Recherche académique</a>
-          <div class="cta-subtitle">Contrat à l'École Normale Supérieure</div>
-          <ul class="cta-bullets">
+    <section class="section section--compact" aria-labelledby="two-activities">
+      <div class="section__title section__title--stacked">
+        <p class="eyebrow">Deux activités complémentaires</p>
+        <h2 id="two-activities">De la connaissance scientifique à la décision</h2>
+      </div>
+      <div class="pathway-grid">
+        <article class="pathway-card">
+          <div>
+            <p class="card-kicker">Contrat à l’École Normale Supérieure</p>
+            <h3>Recherche académique</h3>
+            <p>Comprendre et modéliser les comportements humains à partir de données cognitives, cliniques, longitudinales et visuelles.</p>
+          </div>
+          <ul class="check-list">
             <li>Modèles explicatifs</li>
             <li>Analyses reproductibles</li>
             <li>Publications scientifiques</li>
           </ul>
-        </div>
-        <div class="cta-block">
-          <a class="btn cta" href="ia-appliquee.html">Innovation en IA appliquée</a>
-          <div class="cta-subtitle">Freelance</div>
-          <ul class="cta-bullets">
-            <li>Audit</li>
-            <li>Outils opérationnels</li>
-            <li>Preuve de concept</li>
+          <a class="text-arrow" href="recherche.html">Explorer mes travaux <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="pathway-card pathway-card--featured">
+          <div>
+            <p class="card-kicker">Activité freelance indépendante</p>
+            <h3>Innovation en IA appliquée</h3>
+            <p>Cadrer un besoin, éprouver la faisabilité et livrer une preuve concrète avant un investissement technique important.</p>
+          </div>
+          <ul class="check-list">
+            <li>Diagnostic à partir de 950 €</li>
+            <li>Audit et preuve de concept</li>
+            <li>Formation des équipes</li>
           </ul>
-        </div>
+          <a class="text-arrow" href="ia-appliquee.html">Découvrir les offres <span aria-hidden="true">→</span></a>
+        </article>
       </div>
     </section>
 
     <section class="section narrative">
-      <div class="section__title">
+      <div class="section__title section__title--stacked">
+        <p class="eyebrow">Approche</p>
         <h2>Ce que je fais</h2>
       </div>
       <div class="section-text">
-        <p>Je travaille sur l’analyse et la modélisation des comportements humains à partir de données complexes et hétérogènes : données cognitives, cliniques ou issues de cohortes longitudinales à grande échelle ou de bases de données d'images.</p>
+        <p>Je travaille sur l’analyse et la modélisation des comportements humains à partir de données complexes et hétérogènes : données cognitives, cliniques, cohortes longitudinales à grande échelle et bases de données d’images.</p>
         <p>Cette expertise alimente à la fois des travaux de recherche académique (production de connaissances, modèles explicatifs, publications) et des projets d’IA appliquée orientés vers l’aide à la décision en conditions réelles, sur des données imparfaites et contraintes.</p>
       </div>
     </section>
 
+    <section class="section trust-strip" aria-label="Repères professionnels">
+      <div>
+        <strong>Ph.D</strong>
+        <span>Cognition computationnelle</span>
+      </div>
+      <div>
+        <strong>ENS · INSERM</strong>
+        <span>Recherche biomédicale</span>
+      </div>
+      <div>
+        <strong>IA explicable</strong>
+        <span>Validation, limites et transfert</span>
+      </div>
+    </section>
+
+    <section class="section contact contact--home">
+      <div>
+        <p class="eyebrow">Premier échange</p>
+        <h2>Un projet d’IA à cadrer ou à débloquer&nbsp;?</h2>
+        <p>Décrivez-moi le contexte, les données disponibles et la décision que vous cherchez à améliorer.</p>
+      </div>
+      <div class="contact__actions">
+        <a class="btn primary" href="mailto:nicolas.dibot@ens.psl.eu?subject=Projet%20IA%20-%20premier%20%C3%A9change&amp;body=Bonjour%20Nicolas%2C%0A%0AContexte%20du%20projet%20%3A%0AType%20de%20donn%C3%A9es%20%3A%0AObjectif%20%3A%0A%C3%89ch%C3%A9ance%20%3A%0A">Proposer un échange de 20 min</a>
+        <a class="btn ghost" href="ia-appliquee.html#offres">Voir les offres</a>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Nicolas M. Dibot, Ph.D. Dernière mise à jour : janvier 2026.</p>
+    <p>© 2026 Nicolas M. Dibot, Ph.D. Dernière mise à jour : juillet 2026.</p>
   </footer>
   <script src="theme.js" defer></script>
 </body>
