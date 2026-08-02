@@ -12,20 +12,44 @@
   <meta property="og:title" content="Recherche académique — Nicolas M. Dibot, Ph.D">
   <meta property="og:description" content="IA, cognition computationnelle, modélisation explicable et neurosciences cognitives.">
   <meta property="og:url" content="https://dibot.fr/recherche.html">
-  <meta property="og:image" content="https://dibot.fr/og.png">
+  <meta property="og:image" content="https://dibot.fr/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Nicolas M. Dibot, Ph.D — IA, recherche et innovation">
   <meta name="twitter:card" content="summary_large_image">
   <title>Recherche académique — Nicolas M. Dibot, Ph.D</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://dibot.fr/recherche.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://dibot.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Recherche académique",
+          "item": "https://dibot.fr/recherche.html"
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Navigation principale">
-    <a class="site-brand" href="index.html">Nicolas M. Dibot, Ph.D</a>
+    <a class="site-brand" href="/">Nicolas M. Dibot, Ph.D</a>
     <div class="nav-links">
-      <a href="index.html">Accueil</a>
+      <a href="/">Accueil</a>
       <a class="active" href="recherche.html">Recherche académique</a>
       <a href="ia-appliquee.html">Innovation en IA appliquée</a>
     </div>
@@ -41,6 +65,13 @@
         </svg>
       </button>
     </div>
+  </nav>
+
+  <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+    <ol>
+      <li><a href="/">Accueil</a></li>
+      <li aria-current="page">Recherche académique</li>
+    </ol>
   </nav>
 
   <header class="page-hero">

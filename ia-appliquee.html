@@ -12,20 +12,111 @@
   <meta property="og:title" content="Innovation en IA appliquée — Nicolas M. Dibot, Ph.D">
   <meta property="og:description" content="Cadrer, tester et valider un projet d’IA sur données complexes avant un développement lourd.">
   <meta property="og:url" content="https://dibot.fr/ia-appliquee.html">
-  <meta property="og:image" content="https://dibot.fr/og.png">
+  <meta property="og:image" content="https://dibot.fr/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Nicolas M. Dibot, Ph.D — IA, recherche et innovation">
   <meta name="twitter:card" content="summary_large_image">
   <title>Innovation en IA appliquée — Nicolas M. Dibot, Ph.D</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://dibot.fr/ia-appliquee.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://dibot.fr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Innovation en IA appliquée",
+              "item": "https://dibot.fr/ia-appliquee.html"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://dibot.fr/ia-appliquee.html#service",
+          "url": "https://dibot.fr/ia-appliquee.html",
+          "name": "Conseil indépendant en IA biomédicale et données complexes",
+          "description": "Cadrage, test et validation de projets d’IA sur données complexes pour les healthtechs, équipes R&D et acteurs de santé.",
+          "provider": {
+            "@type": "Person",
+            "@id": "https://dibot.fr/#person",
+            "name": "Nicolas M. Dibot",
+            "url": "https://dibot.fr/"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Offres de conseil en IA",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Diagnostic IA & données",
+                  "description": "Revue du besoin et des données, identification des risques et remise d’une note de décision avec feuille de route priorisée."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Audit technique de modèle",
+                  "description": "Évaluation du protocole, des métriques, de la reproductibilité, des fuites de données, des biais, de la robustesse et de l’interprétabilité d’un modèle existant."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Prototype / preuve de concept",
+                  "description": "Réalisation d’un démonstrateur mesurable et documenté avec baseline, protocole de validation et pipeline reproductible."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Formation IA / LLM en santé",
+                  "description": "Formation aux cas d’usage, au prompt design, aux limites, à la validation, à la confidentialité et aux bonnes pratiques."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Conseil scientifique R&D",
+                  "description": "Revue régulière des choix méthodologiques, priorisation des expérimentations et préparation des décisions clés."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Navigation principale">
-    <a class="site-brand" href="index.html">Nicolas M. Dibot, Ph.D</a>
+    <a class="site-brand" href="/">Nicolas M. Dibot, Ph.D</a>
     <div class="nav-links">
-      <a href="index.html">Accueil</a>
+      <a href="/">Accueil</a>
       <a href="recherche.html">Recherche académique</a>
       <a class="active" href="ia-appliquee.html">Innovation en IA appliquée</a>
     </div>
@@ -41,6 +132,13 @@
         </svg>
       </button>
     </div>
+  </nav>
+
+  <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+    <ol>
+      <li><a href="/">Accueil</a></li>
+      <li aria-current="page">Innovation en IA appliquée</li>
+    </ol>
   </nav>
 
   <header class="page-hero service-hero">

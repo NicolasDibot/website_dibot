@@ -12,41 +12,66 @@
   <meta property="og:title" content="Nicolas M. Dibot, Ph.D — IA, recherche et innovation">
   <meta property="og:description" content="Recherche académique et accompagnement indépendant en IA sur données complexes.">
   <meta property="og:url" content="https://dibot.fr/">
-  <meta property="og:image" content="https://dibot.fr/og.png">
+  <meta property="og:image" content="https://dibot.fr/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Nicolas M. Dibot, Ph.D — IA, recherche et innovation">
   <meta name="twitter:card" content="summary_large_image">
   <title>Nicolas M. Dibot, Ph.D — IA, recherche et innovation</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nicolas M. Dibot",
-      "honorificSuffix": "Ph.D",
-      "jobTitle": "Chercheur en IA et neurosciences computationnelles",
-      "url": "https://dibot.fr/",
-      "email": "mailto:nicolas@dibot.fr",
-      "telephone": "+33695213561",
-      "affiliation": [
-        {"@type": "Organization", "name": "École Normale Supérieure"},
-        {"@type": "Organization", "name": "Institut Mondor de Recherche Biomédicale"}
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/nicolas-dibot-203385178/",
-        "https://scholar.google.com/citations?user=YAc4fGUAAAAJ&hl=fr",
-        "https://www.researchgate.net/profile/Nicolas-Dibot-2"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://dibot.fr/#website",
+          "url": "https://dibot.fr/",
+          "name": "Nicolas M. Dibot",
+          "alternateName": "dibot.fr",
+          "inLanguage": ["fr", "en"],
+          "publisher": {"@id": "https://dibot.fr/#person"}
+        },
+        {
+          "@type": "Person",
+          "@id": "https://dibot.fr/#person",
+          "name": "Nicolas M. Dibot",
+          "honorificSuffix": "Ph.D",
+          "jobTitle": "Chercheur en IA et neurosciences computationnelles",
+          "url": "https://dibot.fr/",
+          "image": "https://dibot.fr/photo_profil-440.webp",
+          "email": "mailto:nicolas@dibot.fr",
+          "telephone": "+33695213561",
+          "affiliation": [
+            {"@type": "Organization", "name": "École Normale Supérieure"},
+            {"@type": "Organization", "name": "Institut Mondor de Recherche Biomédicale"}
+          ],
+          "knowsAbout": [
+            "Intelligence artificielle biomédicale",
+            "Machine learning",
+            "Neurosciences computationnelles",
+            "Modélisation explicable",
+            "Données biomédicales complexes"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/nicolas-dibot-203385178/",
+            "https://scholar.google.com/citations?user=YAc4fGUAAAAJ&hl=fr",
+            "https://www.researchgate.net/profile/Nicolas-Dibot-2"
+          ]
+        }
       ]
     }
   </script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Navigation principale">
-    <a class="site-brand" href="index.html">Nicolas M. Dibot, Ph.D</a>
+    <a class="site-brand" href="/">Nicolas M. Dibot, Ph.D</a>
     <div class="nav-links">
-      <a class="active" href="index.html">Accueil</a>
+      <a class="active" href="/">Accueil</a>
       <a href="recherche.html">Recherche académique</a>
       <a href="ia-appliquee.html">Innovation en IA appliquée</a>
     </div>
@@ -68,7 +93,7 @@
     <div class="hero__content">
       <p class="eyebrow">Recherche académique · Conseil indépendant</p>
       <div class="hero__identity">
-        <img class="profile-pic" src="photo_profil.png" alt="Portrait de Nicolas M. Dibot">
+        <img class="profile-pic" src="photo_profil-220.webp" srcset="photo_profil-220.webp 220w, photo_profil-440.webp 440w" sizes="(max-width: 720px) 170px, 220px" width="220" height="220" fetchpriority="high" decoding="async" alt="Portrait de Nicolas M. Dibot">
         <div class="hero__titles">
           <h1>Nicolas M. Dibot, Ph.D</h1>
           <p class="hero__tagline">Chercheur en IA et neurosciences computationnelles</p>
@@ -80,7 +105,7 @@
         <a class="btn ghost" href="recherche.html">Voir mes travaux</a>
       </div>
       <p class="hero__note">Audit de faisabilité · Validation de modèles · Prototypes interprétables · Formation</p>
-      <div class="hero__coords" aria-label="Coordonnées et profils">
+      <div class="hero__coords" role="group" aria-label="Coordonnées et profils">
         <a class="text-link" href="mailto:nicolas@dibot.fr">nicolas@dibot.fr</a>
         <span aria-hidden="true">·</span>
         <a class="text-link" href="tel:+33695213561">+33 (0) 6 95 21 35 61</a>
@@ -99,12 +124,12 @@
         <ul class="affiliation-list">
           <li>
             <a href="https://www.ens.psl.eu/departement/departement-d-etudes-cognitives" target="_blank" rel="noreferrer">
-              <img class="meta-logo" src="logo_ens.png" alt="ENS Ulm">
+              <img class="meta-logo" src="logo_ens.png" width="551" height="621" loading="lazy" decoding="async" alt="ENS Ulm">
             </a>
             <span>École Normale Supérieure (ENS Ulm) — Département d’études cognitives, Paris</span>
           </li>
           <li>
-            <span class="logo-crop"><img src="logo-Inserm.jpg" alt="INSERM"></span>
+            <span class="logo-crop"><img src="logo-Inserm.jpg" width="550" height="500" loading="lazy" decoding="async" alt="INSERM"></span>
             <span>Institut Mondor de Recherche Biomédicale (INSERM), Créteil</span>
           </li>
         </ul>

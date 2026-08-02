@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("fonts/cormorant-garamond-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 :root {
   --bg: #0b0b0b;
@@ -155,6 +171,30 @@ button:focus-visible {
 .theme-icon--moon { display: none; }
 :root[data-theme="light"] .theme-icon--sun { display: none; }
 :root[data-theme="light"] .theme-icon--moon { display: block; }
+.breadcrumbs {
+  padding: 16px min(9vw, 120px) 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.breadcrumbs ol {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li + li::before {
+  content: "/";
+  margin-right: 8px;
+  color: var(--muted);
+}
+.breadcrumbs a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.breadcrumbs a:hover { color: var(--text); }
 .page-hero {
   padding: 48px min(9vw, 120px) 24px;
 }
@@ -1089,6 +1129,7 @@ button:focus-visible {
 
 @media (max-width: 720px) {
   .section { padding: 40px 6vw; }
+  .breadcrumbs { padding: 14px 6vw 0; }
   .page-hero { padding: 36px 6vw 18px; }
   .hero { padding: 48px 6vw; gap: 24px; }
   .hero__identity {
