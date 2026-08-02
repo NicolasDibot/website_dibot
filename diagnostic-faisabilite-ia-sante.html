@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diagnostic de faisabilité pour un projet d’IA santé : besoin, données, risques, options techniques, critères de succès et feuille de route priorisée.">
+  <link rel="canonical" href="https://dibot.fr/diagnostic-faisabilite-ia-sante.html">
+  <link rel="alternate" hreflang="fr" href="https://dibot.fr/diagnostic-faisabilite-ia-sante.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Faisabilité d’un projet IA santé | Nicolas Dibot">
+  <meta property="og:description" content="Évaluer le besoin, les données, les risques et les critères de succès avant tout développement IA en santé.">
+  <meta property="og:url" content="https://dibot.fr/diagnostic-faisabilite-ia-sante.html">
+  <meta property="og:image" content="https://dibot.fr/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nicolas Dibot — Diagnostic de faisabilité IA santé">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Faisabilité d’un projet IA santé | Nicolas Dibot</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://dibot.fr/diagnostic-faisabilite-ia-sante.html#breadcrumb",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://dibot.fr/"},
+            {"@type": "ListItem", "position": 2, "name": "Consultant IA santé", "item": "https://dibot.fr/ia-appliquee.html"},
+            {"@type": "ListItem", "position": 3, "name": "Diagnostic de faisabilité IA santé", "item": "https://dibot.fr/diagnostic-faisabilite-ia-sante.html"}
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://dibot.fr/diagnostic-faisabilite-ia-sante.html#service",
+          "url": "https://dibot.fr/diagnostic-faisabilite-ia-sante.html",
+          "name": "Diagnostic de faisabilité d’un projet IA santé",
+          "serviceType": "Diagnostic de faisabilité pour un projet d’intelligence artificielle en santé",
+          "description": "Analyse du besoin, des données, des contraintes, des risques et des critères de succès pour décider s’il faut lancer, recadrer ou arrêter un projet IA santé.",
+          "provider": {"@type": "Person", "@id": "https://dibot.fr/#person", "name": "Nicolas M. Dibot", "url": "https://dibot.fr/"},
+          "areaServed": {"@type": "Country", "name": "France"},
+          "audience": {"@type": "Audience", "audienceType": "HealthTechs, MedTechs et équipes R&D avant le développement d’un modèle"}
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a class="site-brand" href="/">Nicolas M. Dibot, Ph.D</a>
+    <div class="nav-links"><a href="/">Accueil</a><a href="/recherche.html">Recherche académique</a><a class="active" href="/ia-appliquee.html">Innovation en IA appliquée</a></div>
+    <div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Basculer en mode clair"><svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg><svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"></path></svg></button></div>
+  </nav>
+
+  <nav class="breadcrumbs" aria-label="Fil d’Ariane"><ol><li><a href="/">Accueil</a></li><li><a href="/ia-appliquee.html">Consultant IA santé</a></li><li aria-current="page">Diagnostic de faisabilité IA santé</li></ol></nav>
+
+  <header class="page-hero service-hero service-detail-hero">
+    <p class="eyebrow">Porte d’entrée · Avant tout développement</p>
+    <h1>Évaluer la faisabilité de votre projet IA santé</h1>
+    <p class="service-hero__lead">Vous avez un problème métier ou scientifique et des données potentielles, mais vous ne savez pas encore si l’IA est pertinente, testable ou prioritaire. J’examine le besoin, les données disponibles et les contraintes afin de produire une décision argumentée et une prochaine étape réaliste.</p>
+    <div class="detail-meta" role="list" aria-label="Modalités principales"><span role="listitem">En général 1 à 2 semaines</span><span role="listitem">À partir de 950 €</span><span role="listitem">France et à distance</span></div>
+    <div class="hero__actions"><a class="btn primary" href="mailto:nicolas@dibot.fr?subject=Diagnostic%20de%20faisabilit%C3%A9%20IA%20sant%C3%A9&amp;body=Bonjour%20Nicolas%2C%0A%0APage%20d%E2%80%99origine%20%3A%20https%3A%2F%2Fdibot.fr%2Fdiagnostic-faisabilite-ia-sante.html%0AOrganisation%20%3A%0AProbl%C3%A8me%20ou%20d%C3%A9cision%20%C3%A0%20am%C3%A9liorer%20%3A%0ADonn%C3%A9es%20disponibles%20%3A%0AContraintes%20connues%20%3A%0AStade%20du%20projet%20%3A%0A%C3%89ch%C3%A9ance%20%3A%0A%0AMerci%20de%20ne%20joindre%20aucune%20donn%C3%A9e%20personnelle%2C%20donn%C3%A9e%20de%20sant%C3%A9%20ou%20information%20confidentielle%20%C3%A0%20ce%20premier%20message.%0A">Demander un diagnostic</a><a class="btn ghost" href="#questions">Voir les questions traitées</a></div>
+  </header>
+
+  <main>
+    <section id="questions" class="section section--compact" aria-labelledby="questions-title">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Décision go / no-go</p><h2 id="questions-title">Les questions auxquelles le diagnostic répond</h2></div>
+      <ul class="examples-list examples-list--grid">
+        <li>Quelle décision ou quel processus le projet doit-il réellement améliorer&nbsp;?</li>
+        <li>Les données disponibles correspondent-elles à cette question&nbsp;?</li>
+        <li>Le volume, la qualité et la représentativité suffisent-ils pour un premier test&nbsp;?</li>
+        <li>Quels biais, valeurs manquantes, contraintes d’accès ou risques de fuite faut-il anticiper&nbsp;?</li>
+        <li>Quelle baseline et quelles métriques permettraient d’évaluer honnêtement le projet&nbsp;?</li>
+        <li>Faut-il lancer un POC, collecter d’autres données, recadrer le besoin ou arrêter&nbsp;?</li>
+      </ul>
+    </section>
+
+    <section class="section section--band" aria-labelledby="situations-diagnostic">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Situations fréquentes</p><h2 id="situations-diagnostic">Quand commencer par un diagnostic de faisabilité</h2></div>
+      <div class="detail-grid">
+        <article class="detail-card"><span class="card-number">01</span><h3>Une idée et des données, sans protocole</h3><p>Transformer une intuition en question testable avant de mobiliser une équipe technique.</p></article>
+        <article class="detail-card"><span class="card-number">02</span><h3>Plusieurs cas d’usage possibles</h3><p>Comparer les options selon leur valeur, leur faisabilité et les contraintes de données.</p></article>
+        <article class="detail-card"><span class="card-number">03</span><h3>Une décision d’investissement à préparer</h3><p>Obtenir un avis indépendant avant un recrutement, un POC ou une consultation de prestataires.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="analyse-diagnostic">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Analyse et livrable</p><h2 id="analyse-diagnostic">Du problème initial à une note de décision</h2></div>
+      <div class="detail-columns">
+        <div>
+          <h3>Ce que j’analyse</h3>
+          <ul class="check-list">
+            <li>Besoin, utilisateur et décision visée</li>
+            <li>Sources de données, disponibilité et qualité apparente</li>
+            <li>Effectifs, valeurs manquantes, biais de sélection et hétérogénéité</li>
+            <li>Contraintes de confidentialité, d’accès et d’environnement</li>
+            <li>Options techniques raisonnables et baseline minimale</li>
+            <li>Critères de succès, risques principaux et dépendances</li>
+            <li>Effort nécessaire pour obtenir une preuve exploitable</li>
+          </ul>
+        </div>
+        <aside class="detail-panel" aria-label="Contenu de la note de décision">
+          <h3>Ce que vous recevez</h3>
+          <p>Un document court et actionnable, conçu pour arbitrer la suite plutôt que pour produire un état de l’art général.</p>
+          <ul class="check-list">
+            <li>Cas d’usage prioritaire reformulé</li>
+            <li>Inventaire des données et des lacunes</li>
+            <li>Risques et points bloquants</li>
+            <li>Critères de go, no-go ou poursuite sous conditions</li>
+            <li>Protocole recommandé pour l’étape suivante</li>
+            <li>Feuille de route priorisée</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="deroulement-diagnostic">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Déroulement</p><h2 id="deroulement-diagnostic">Une intervention courte en quatre étapes</h2></div>
+      <div class="detail-steps">
+        <article class="detail-step"><h3>Préparation</h3><p>Questionnaire court et collecte de la documentation non confidentielle utile.</p></article>
+        <article class="detail-step"><h3>Entretien de cadrage</h3><p>Échange avec le sponsor et, si nécessaire, un interlocuteur métier ou technique.</p></article>
+        <article class="detail-step"><h3>Analyse</h3><p>Revue du besoin, des données, des contraintes et des options de test.</p></article>
+        <article class="detail-step"><h3>Note et restitution</h3><p>Présentation de la recommandation, des réserves et de la prochaine étape.</p></article>
+      </div>
+      <p class="scope-note"><strong>Le diagnostic ne force pas le recours à l’IA.</strong> Il peut recommander un POC borné, une collecte supplémentaire, un recadrage, une approche plus simple ou l’arrêt du projet.</p>
+    </section>
+
+    <section class="section" aria-labelledby="modalites-diagnostic">
+      <div class="detail-columns">
+        <div><div class="section__title section__title--stacked"><p class="eyebrow">Modalités</p><h2 id="modalites-diagnostic">Un cadrage proportionné à la décision</h2></div><p class="section-intro">La mission dure généralement 1 à 2 semaines. Le tarif commence à 950 € et dépend du nombre d’interlocuteurs, des sources à examiner et de la complexité de la décision.</p><p class="scope-note"><strong>Confidentialité :</strong> une revue initiale peut s’appuyer sur un dictionnaire de données, des volumes, des statistiques agrégées et la documentation existante. Aucun accès à des données de santé n’est demandé par email.</p></div>
+        <aside class="detail-panel"><h3>La bonne issue n’est pas toujours un POC</h3><p>L’utilité du diagnostic est d’identifier tôt un manque de données, une cible mal définie, un risque disproportionné ou une alternative plus simple.</p><p>Une recommandation de recadrage ou d’arrêt peut éviter une dépense technique prématurée.</p></aside>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="faq-diagnostic">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Questions fréquentes</p><h2 id="faq-diagnostic">Avant de demander un diagnostic</h2></div>
+      <div class="faq-list">
+        <article class="faq-item"><h3>Faut-il déjà avoir un modèle&nbsp;?</h3><p>Non. Le diagnostic intervient justement avant le développement, lorsque le besoin, les données ou le protocole doivent encore être clarifiés.</p></article>
+        <article class="faq-item"><h3>Le diagnostic garantit-il que le projet fonctionnera&nbsp;?</h3><p>Non. Il réduit l’incertitude à partir des informations disponibles et explicite les conditions nécessaires pour tester le projet correctement.</p></article>
+        <article class="faq-item"><h3>Devons-nous partager des données sensibles&nbsp;?</h3><p>Pas lors du premier échange. Tout besoin d’accès supplémentaire est ensuite défini dans un cadre adapté.</p></article>
+        <article class="faq-item"><h3>Quelle différence avec un audit de modèle&nbsp;?</h3><p>Le diagnostic évalue un projet avant ou au début de sa conception. L’audit vérifie un modèle, un pipeline ou des résultats déjà produits.</p></article>
+        <article class="faq-item"><h3>Que peut recommander le diagnostic&nbsp;?</h3><p>Un POC, une préparation supplémentaire des données, un audit ciblé, un recadrage du cas d’usage ou l’arrêt du projet.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="orientation-diagnostic">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Après le diagnostic</p><h2 id="orientation-diagnostic">Poursuivre uniquement si les conditions sont réunies</h2></div>
+      <div class="related-services">
+        <a class="related-service" href="/audit-modele-ia-sante.html"><span class="card-number">Modèle existant</span><h3>Audit de modèle IA santé</h3><p>Vérifier des résultats déjà produits.</p><span class="text-arrow">Découvrir l’audit <span aria-hidden="true">→</span></span></a>
+        <a class="related-service" href="/preuve-de-concept-ia-sante.html"><span class="card-number">Cas d’usage prêt</span><h3>Preuve de concept IA santé</h3><p>Tester une hypothèse avec un POC mesurable.</p><span class="text-arrow">Évaluer le POC <span aria-hidden="true">→</span></span></a>
+        <a class="related-service" href="/ia-appliquee.html"><span class="card-number">Vue générale</span><h3>Conseil en IA santé</h3><p>Comparer les interventions disponibles.</p><span class="text-arrow">Voir toutes les offres <span aria-hidden="true">→</span></span></a>
+      </div>
+    </section>
+
+    <section class="section contact contact--commercial"><div><p class="eyebrow">Prochaine étape</p><h2>Décrivez le problème avant de choisir la technologie.</h2><p>Le besoin, les données disponibles et la décision à préparer suffisent pour un premier échange.</p><p class="privacy-reminder">Merci de ne joindre aucune donnée personnelle, donnée de santé ou information confidentielle à ce premier message.</p></div><div class="contact__actions"><a class="btn primary" href="mailto:nicolas@dibot.fr?subject=Diagnostic%20de%20faisabilit%C3%A9%20IA%20sant%C3%A9&amp;body=Bonjour%20Nicolas%2C%0A%0APage%20d%E2%80%99origine%20%3A%20https%3A%2F%2Fdibot.fr%2Fdiagnostic-faisabilite-ia-sante.html%0AOrganisation%20%3A%0AProbl%C3%A8me%20ou%20d%C3%A9cision%20%C3%A0%20am%C3%A9liorer%20%3A%0ADonn%C3%A9es%20disponibles%20%3A%0AContraintes%20connues%20%3A%0AStade%20du%20projet%20%3A%0A%C3%89ch%C3%A9ance%20%3A%0A%0AMerci%20de%20ne%20joindre%20aucune%20donn%C3%A9e%20personnelle%2C%20donn%C3%A9e%20de%20sant%C3%A9%20ou%20information%20confidentielle%20%C3%A0%20ce%20premier%20message.%0A">Demander un diagnostic</a><a class="btn ghost" href="tel:+33695213561">+33 (0) 6 95 21 35 61</a></div></section>
+  </main>
+
+  <footer class="footer"><p class="footer__links"><a href="/mentions-legales.html">Mentions légales</a><span aria-hidden="true">·</span><a href="/confidentialite.html">Confidentialité</a></p><p>Contact professionnel : <a class="text-link" href="mailto:nicolas@dibot.fr">nicolas@dibot.fr</a> · © 2026 Nicolas M. Dibot, Ph.D. Dernière mise à jour : août 2026.</p></footer>
+  <script src="/theme.js" defer></script>
+</body>
+</html>

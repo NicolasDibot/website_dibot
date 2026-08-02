@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Audit indépendant de votre modèle IA santé : protocole, fuites de données, métriques, biais, robustesse, interprétabilité et recommandations actionnables.">
+  <link rel="canonical" href="https://dibot.fr/audit-modele-ia-sante.html">
+  <link rel="alternate" hreflang="fr" href="https://dibot.fr/audit-modele-ia-sante.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Audit de modèle IA santé : robustesse et biais | Nicolas Dibot">
+  <meta property="og:description" content="Évaluer protocole, métriques, fuites de données, biais, robustesse et reproductibilité d’un modèle IA en santé.">
+  <meta property="og:url" content="https://dibot.fr/audit-modele-ia-sante.html">
+  <meta property="og:image" content="https://dibot.fr/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nicolas Dibot — Audit de modèle IA santé">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Audit de modèle IA santé : robustesse et biais | Nicolas Dibot</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://dibot.fr/audit-modele-ia-sante.html#breadcrumb",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://dibot.fr/"},
+            {"@type": "ListItem", "position": 2, "name": "Consultant IA santé", "item": "https://dibot.fr/ia-appliquee.html"},
+            {"@type": "ListItem", "position": 3, "name": "Audit de modèle IA santé", "item": "https://dibot.fr/audit-modele-ia-sante.html"}
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://dibot.fr/audit-modele-ia-sante.html#service",
+          "url": "https://dibot.fr/audit-modele-ia-sante.html",
+          "name": "Audit de modèle IA santé",
+          "serviceType": "Audit scientifique et technique de modèle d’intelligence artificielle en santé",
+          "description": "Revue indépendante du protocole, des données, des métriques, des biais, de la robustesse, de l’interprétabilité et de la reproductibilité d’un modèle IA en santé.",
+          "provider": {"@type": "Person", "@id": "https://dibot.fr/#person", "name": "Nicolas M. Dibot", "url": "https://dibot.fr/"},
+          "areaServed": {"@type": "Country", "name": "France"},
+          "audience": {"@type": "Audience", "audienceType": "HealthTechs, MedTechs et équipes R&D disposant déjà d’un modèle"}
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a class="site-brand" href="/">Nicolas M. Dibot, Ph.D</a>
+    <div class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/recherche.html">Recherche académique</a>
+      <a class="active" href="/ia-appliquee.html">Innovation en IA appliquée</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Basculer en mode clair">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"></path></svg>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+    <ol>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/ia-appliquee.html">Consultant IA santé</a></li>
+      <li aria-current="page">Audit de modèle IA santé</li>
+    </ol>
+  </nav>
+
+  <header class="page-hero service-hero service-detail-hero">
+    <p class="eyebrow">Offre centrale · Modèle déjà développé</p>
+    <h1>Audit de modèle IA santé : évaluer sa robustesse, ses biais et sa validité pour l’usage prévu</h1>
+    <p class="service-hero__lead">Un bon score ne suffit pas à établir qu’un modèle est robuste, généralisable ou adapté à son usage. Je réalise une revue scientifique indépendante de votre protocole, de vos données, de vos métriques et de vos résultats afin d’identifier les faiblesses susceptibles d’apparaître lors d’un pilote, d’un changement de site ou d’une extension.</p>
+    <div class="detail-meta" role="list" aria-label="Modalités principales">
+      <span role="listitem">En général 2 à 4 semaines</span>
+      <span role="listitem">Budget habituel : 3 500 à 6 000 €</span>
+      <span role="listitem">France et à distance</span>
+    </div>
+    <div class="hero__actions">
+      <a class="btn primary" href="mailto:nicolas@dibot.fr?subject=Audit%20de%20mod%C3%A8le%20IA%20sant%C3%A9&amp;body=Bonjour%20Nicolas%2C%0A%0APage%20d%E2%80%99origine%20%3A%20https%3A%2F%2Fdibot.fr%2Faudit-modele-ia-sante.html%0AOrganisation%20%3A%0AUsage%20vis%C3%A9%20%3A%0AType%20et%20volume%20de%20donn%C3%A9es%20%3A%0AStade%20du%20mod%C3%A8le%20%3A%0AQuestion%20prioritaire%20%3A%0A%C3%89ch%C3%A9ance%20%3A%0A%0AMerci%20de%20ne%20joindre%20aucune%20donn%C3%A9e%20personnelle%2C%20donn%C3%A9e%20de%20sant%C3%A9%20ou%20information%20confidentielle%20%C3%A0%20ce%20premier%20message.%0A">Décrire le modèle à auditer</a>
+      <a class="btn ghost" href="#perimetre">Voir le périmètre de l’audit</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--compact" aria-labelledby="quand-auditer">
+      <div class="section__title section__title--stacked">
+        <p class="eyebrow">Décision à préparer</p>
+        <h2 id="quand-auditer">Quand faire auditer un modèle IA en santé&nbsp;?</h2>
+        <p class="section-intro">Cette intervention s’adresse aux healthtechs, MedTechs et équipes R&amp;D qui disposent déjà d’un modèle, d’un pipeline ou de résultats expérimentaux.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card"><span class="card-number">01</span><h3>Avant un pilote ou une extension</h3><p>Déterminer si les résultats actuels justifient un test plus large, un nouveau site, une nouvelle population ou un investissement supplémentaire.</p></article>
+        <article class="detail-card"><span class="card-number">02</span><h3>Quand les performances sont difficiles à défendre</h3><p>Le score global paraît satisfaisant, mais la calibration, les biais, les fuites de données ou la stabilité entre sous-groupes restent insuffisamment documentés.</p></article>
+        <article class="detail-card"><span class="card-number">03</span><h3>Pour obtenir une lecture indépendante</h3><p>Votre équipe souhaite une revue extérieure, ponctuelle et documentée sans remplacer les compétences internes ni ralentir la feuille de route.</p></article>
+      </div>
+    </section>
+
+    <section id="perimetre" class="section section--band" aria-labelledby="perimetre-title">
+      <div class="section__title section__title--stacked">
+        <p class="eyebrow">Périmètre de l’audit</p>
+        <h2 id="perimetre-title">Ce que j’examine et ce que vous recevez</h2>
+      </div>
+      <div class="detail-columns">
+        <div>
+          <h3>Points de contrôle possibles</h3>
+          <ul class="check-list">
+            <li>Définition de la cible, de l’usage prévu et du critère de réussite</li>
+            <li>Constitution des cohortes et séparation entraînement, validation et test</li>
+            <li>Fuites de données, doublons, biais de sélection et déséquilibre des classes</li>
+            <li>Pertinence des métriques, calibration et incertitude des estimations</li>
+            <li>Robustesse entre sites, périodes, appareils, populations ou sous-groupes</li>
+            <li>Analyse d’erreurs, interprétabilité et modes d’échec</li>
+            <li>Reproductibilité du pipeline, des versions et des résultats</li>
+          </ul>
+        </div>
+        <aside class="detail-panel" aria-label="Livrables de l’audit">
+          <h3>Livrables actionnables</h3>
+          <p>L’objectif n’est pas d’accumuler des tests, mais de préparer une décision exploitable par les équipes scientifiques, techniques et dirigeantes.</p>
+          <ul class="check-list">
+            <li>Synthèse destinée aux décideurs</li>
+            <li>Matrice de risques hiérarchisée</li>
+            <li>Protocole de validation adapté à l’usage</li>
+            <li>Analyses prévues au périmètre</li>
+            <li>Recommandations classées par priorité</li>
+            <li>Restitution avec vos équipes</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="deroulement-audit">
+      <div class="section__title section__title--stacked">
+        <p class="eyebrow">Déroulement</p>
+        <h2 id="deroulement-audit">Un audit borné, traçable et restitué</h2>
+      </div>
+      <div class="detail-steps">
+        <article class="detail-step"><h3>Cadrage</h3><p>Usage prévu, décision à préparer, documentation disponible, contraintes et critères de succès.</p></article>
+        <article class="detail-step"><h3>Reproduction et revue</h3><p>Lecture du protocole, du code et des résultats puis, lorsque le cadre le permet, exécution des analyses convenues.</p></article>
+        <article class="detail-step"><h3>Tests ciblés</h3><p>Vérification des risques prioritaires : robustesse, biais, calibration, fuites, généralisation et reproductibilité.</p></article>
+        <article class="detail-step"><h3>Rapport et restitution</h3><p>Présentation des constats, de leur criticité, des limites et des actions recommandées.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="cadre-audit">
+      <div class="detail-columns">
+        <div>
+          <div class="section__title section__title--stacked">
+            <p class="eyebrow">Données et confidentialité</p>
+            <h2 id="cadre-audit">Commencer sans exposer de données sensibles</h2>
+          </div>
+          <p class="section-intro">L’audit peut débuter à partir de la documentation, du protocole, du code et de résultats agrégés. Tout accès à des données fait l’objet d’un cadrage préalable. Le travail peut ensuite être réalisé sur des données réellement anonymisées ou synthétiques. Les données pseudonymisées restent des données personnelles et ne sont traitées que dans un cadre contractuel et de sécurité adapté, notamment dans l’environnement contrôlé du client.</p>
+          <p class="scope-note"><strong>Premier échange :</strong> ne transmettez aucune donnée de santé, information personnelle ou donnée confidentielle par email.</p>
+        </div>
+        <aside class="detail-panel">
+          <h3>Limites explicites</h3>
+          <p>Cette prestation constitue une évaluation scientifique et technique. Elle ne vaut ni validation clinique, ni certification de dispositif médical, ni audit réglementaire, ni garantie de performance en vie réelle.</p>
+          <p><strong>Modalités :</strong> 2 à 4 semaines et 3 500 à 6 000 € en général, selon la documentation, les accès, le nombre d’analyses et la complexité du protocole.</p>
+          <a class="text-arrow" href="/ressources/validation-modele-predictif-sante.html">Lire la méthode de validation <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-audit">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Questions fréquentes</p><h2 id="faq-audit">Avant de lancer un audit</h2></div>
+      <div class="faq-list">
+        <article class="faq-item"><h3>Faut-il transmettre les données dès le premier échange&nbsp;?</h3><p>Non. Le premier échange sert à comprendre l’usage, le modèle et la question à trancher. Les accès éventuels sont définis ensuite dans un cadre adapté.</p></article>
+        <article class="faq-item"><h3>L’audit remplace-t-il le travail de notre équipe data&nbsp;?</h3><p>Non. Il apporte une lecture indépendante, ponctuelle et documentée, puis restitue les constats à l’équipe pour l’aider à décider et corriger.</p></article>
+        <article class="faq-item"><h3>Quels types de modèles peuvent être examinés&nbsp;?</h3><p>La revue peut concerner des modèles appliqués à l’imagerie, aux données tabulaires ou aux cohortes longitudinales, notamment lorsque l’interprétabilité et la robustesse doivent être documentées.</p></article>
+        <article class="faq-item"><h3>L’audit certifie-t-il le modèle&nbsp;?</h3><p>Non. Il documente ses forces, ses faiblesses et les validations encore nécessaires. Il ne remplace pas une validation clinique, un organisme notifié ou un conseil réglementaire.</p></article>
+        <article class="faq-item"><h3>Que faire si le modèle n’est pas encore assez avancé&nbsp;?</h3><p>Un diagnostic de faisabilité est généralement plus pertinent si le besoin, les données ou le protocole ne sont pas encore stabilisés.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="orientation-audit">
+      <div class="section__title section__title--stacked"><p class="eyebrow">Orientation</p><h2 id="orientation-audit">Une autre intervention est peut-être plus adaptée</h2></div>
+      <div class="related-services">
+        <a class="related-service" href="/diagnostic-faisabilite-ia-sante.html"><span class="card-number">Projet encore flou</span><h3>Diagnostic de faisabilité</h3><p>Cadrer le besoin et les données avant de développer.</p><span class="text-arrow">Découvrir le diagnostic <span aria-hidden="true">→</span></span></a>
+        <a class="related-service" href="/preuve-de-concept-ia-sante.html"><span class="card-number">Cas d’usage défini</span><h3>Preuve de concept IA santé</h3><p>Démontrer une valeur mesurable avant industrialisation.</p><span class="text-arrow">Évaluer le POC <span aria-hidden="true">→</span></span></a>
+        <a class="related-service" href="/ia-appliquee.html"><span class="card-number">Vue générale</span><h3>Conseil en IA santé</h3><p>Comparer les formats d’intervention et choisir le bon point de départ.</p><span class="text-arrow">Voir toutes les offres <span aria-hidden="true">→</span></span></a>
+      </div>
+    </section>
+
+    <section class="section contact contact--commercial">
+      <div><p class="eyebrow">Prochaine étape</p><h2>Décrivez le modèle et la décision à sécuriser.</h2><p>Quelques éléments sur l’usage visé, le stade du modèle et la question prioritaire suffisent pour vérifier si un audit est pertinent.</p><p class="privacy-reminder">Merci de ne joindre aucune donnée personnelle, donnée de santé ou information confidentielle à ce premier message.</p></div>
+      <div class="contact__actions"><a class="btn primary" href="mailto:nicolas@dibot.fr?subject=Audit%20de%20mod%C3%A8le%20IA%20sant%C3%A9&amp;body=Bonjour%20Nicolas%2C%0A%0APage%20d%E2%80%99origine%20%3A%20https%3A%2F%2Fdibot.fr%2Faudit-modele-ia-sante.html%0AOrganisation%20%3A%0AUsage%20vis%C3%A9%20%3A%0AType%20et%20volume%20de%20donn%C3%A9es%20%3A%0AStade%20du%20mod%C3%A8le%20%3A%0AQuestion%20prioritaire%20%3A%0A%C3%89ch%C3%A9ance%20%3A%0A%0AMerci%20de%20ne%20joindre%20aucune%20donn%C3%A9e%20personnelle%2C%20donn%C3%A9e%20de%20sant%C3%A9%20ou%20information%20confidentielle%20%C3%A0%20ce%20premier%20message.%0A">Décrire le modèle à auditer</a><a class="btn ghost" href="tel:+33695213561">+33 (0) 6 95 21 35 61</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><p class="footer__links"><a href="/mentions-legales.html">Mentions légales</a><span aria-hidden="true">·</span><a href="/confidentialite.html">Confidentialité</a></p><p>Contact professionnel : <a class="text-link" href="mailto:nicolas@dibot.fr">nicolas@dibot.fr</a> · © 2026 Nicolas M. Dibot, Ph.D. Dernière mise à jour : août 2026.</p></footer>
+  <script src="/theme.js" defer></script>
+</body>
+</html>
