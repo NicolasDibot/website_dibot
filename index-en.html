@@ -34,7 +34,7 @@
           "name": "Nicolas M. Dibot",
           "alternateName": "dibot.fr",
           "inLanguage": ["fr", "en"],
-          "publisher": {"@id": "https://dibot.fr/#person"}
+          "publisher": {"@id": "https://dibot.fr/#business"}
         },
         {
           "@type": "Person",
@@ -46,6 +46,7 @@
           "image": "https://dibot.fr/photo_profil-440.webp",
           "email": "mailto:nicolas@dibot.fr",
           "telephone": "+33695213561",
+          "worksFor": {"@id": "https://dibot.fr/#business"},
           "affiliation": [
             {"@type": "Organization", "name": "École Normale Supérieure"},
             {"@type": "Organization", "name": "Institut Mondor de Recherche Biomédicale"}
@@ -64,6 +65,31 @@
             "https://scholar.google.com/citations?user=YAc4fGUAAAAJ&hl=fr",
             "https://www.researchgate.net/profile/Nicolas-Dibot-2"
           ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://dibot.fr/#business",
+          "name": "Dibot AI",
+          "legalName": "Nicolas Dibot",
+          "url": "https://dibot.fr/applied-ai-en.html",
+          "email": "mailto:nicolas@dibot.fr",
+          "telephone": "+33695213561",
+          "taxID": "108323601",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SIRET",
+            "value": "10832360100014"
+          },
+          "foundingDate": "2026-08-03",
+          "founder": {"@id": "https://dibot.fr/#person"},
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "16 rue des Écoles",
+            "postalCode": "44115",
+            "addressLocality": "Haute-Goulaine",
+            "addressCountry": "FR"
+          },
+          "areaServed": {"@type": "Country", "name": "France"}
         }
       ]
     }
