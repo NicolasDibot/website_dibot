@@ -1457,6 +1457,8 @@ button:focus-visible {
     align-items: stretch;
   }
   .hero__actions .btn { width: 100%; }
+  .offers-grid,
+  .case-grid { grid-template-columns: 1fr; }
   .trust-strip { grid-template-columns: 1fr; }
   .trust-strip > div { padding: 22px; }
   .secondary-offer {
