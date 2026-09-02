@@ -40,4 +40,29 @@
       applyTheme(next);
     });
   }
+
+  document.querySelectorAll(".video-facade[data-video-id]").forEach((facade) => {
+    facade.addEventListener("click", (event) => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+      const videoId = facade.dataset.videoId || "";
+      if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) return;
+
+      event.preventDefault();
+
+      const params = new URLSearchParams({ autoplay: "1", rel: "0", playsinline: "1" });
+      const start = Number.parseInt(facade.dataset.videoStart || "", 10);
+      if (Number.isInteger(start) && start > 0) params.set("start", String(start));
+
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`;
+      iframe.title = facade.dataset.videoTitle || (lang === "fr" ? "Vidéo YouTube" : "YouTube video");
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
+      facade.parentElement.replaceChildren(iframe);
+      iframe.focus();
+    });
+  });
 })();
