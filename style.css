@@ -864,6 +864,12 @@ button:focus-visible {
   color: var(--muted);
 }
 .case-card .text-arrow { margin-top: auto; }
+.case-links {
+  display: grid;
+  gap: 12px;
+  margin-top: auto;
+}
+.case-card .case-links .text-arrow { margin-top: 0; }
 .case-outcome {
   display: block;
   margin-top: auto;
@@ -873,6 +879,7 @@ button:focus-visible {
   border-top: 1px solid var(--border);
 }
 .case-card .text-arrow + .case-outcome { margin-top: 18px; }
+.case-links + .case-outcome { margin-top: 18px; }
 .examples-list--grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
@@ -1149,11 +1156,69 @@ button:focus-visible {
   height: var(--video-height);
   aspect-ratio: 16 / 9;
   width: auto;
+  max-width: 100%;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
+.video-facade {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  background: #111;
+  text-decoration: none;
+}
+.video-facade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 42%, rgba(0, 0, 0, 0.68));
+  pointer-events: none;
+}
+.video-facade img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+.video-facade__play {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  padding-left: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(16, 16, 18, 0.82);
+  font-size: 23px;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  transition: background 180ms ease, transform 180ms ease;
+}
+.video-facade__label {
+  position: absolute;
+  z-index: 1;
+  right: 14px;
+  bottom: 12px;
+  left: 14px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+.video-facade:hover img { transform: scale(1.025); filter: brightness(0.88); }
+.video-facade:hover .video-facade__play { background: #d62020; transform: translate(-50%, -50%) scale(1.06); }
+.video-facade:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .video-embed iframe {
   position: absolute;
   inset: 0;
@@ -1481,6 +1546,7 @@ button:focus-visible {
     gap: 7px;
   }
   .examples-list--grid { grid-template-columns: 1fr; }
+  .pathway-grid,
   .service-links-grid,
   .detail-grid,
   .detail-grid.four,
